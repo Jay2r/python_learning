@@ -1,0 +1,72 @@
+Method	       Use case
+print()	     Simple output
+sep, end	 Control spacing/line breaks
+f-string	 Best, readable, fast
+.format()	 Older but valid
+ %	         Legacy
+
+
+Using print() (basic formatting)
+name = "Vijay"
+age = 22
+
+print("Name:", name, "Age:", age)
+
+
+Output:
+
+Name: Vijay Age: 22
+
+2️⃣ Using sep and end in print()
+print("A", "B", "C", sep="-")
+print("Hello", end=" ")
+print("World")
+
+
+Output:
+
+A-B-C
+Hello World
+
+3️⃣ Using f-strings (BEST & modern way) ⭐
+name = "Vijay"
+marks = 95
+
+print(f"Name: {name}, Marks: {marks}")
+
+
+Output:
+
+Name: Vijay, Marks: 95
+
+Formatting numbers
+pi = 3.14159
+print(f"Pi value: {pi:.2f}")
+
+
+Output:
+
+Pi value: 3.14
+
+4️⃣ Using .format() method
+print("Name: {}, Age: {}".format("Vijay", 22))
+
+
+Output:
+
+Name: Vijay, Age: 22
+
+5️⃣ Alignment & spacing (table-like output)
+print(f"{'ID':<5} {'Name':<10} {'Marks':>6}")
+print(f"{101:<5} {'Amit':<10} {90:>6}")
+print(f"{102:<5} {'Ravi':<10} {85:>6}")
+
+
+Output:
+
+ID    Name         Marks
+101   Amit             90
+102   Ravi             85
+
+6️⃣ Old-style formatting (%) (legacy)
+print("Name: %s Age: %d" % ("Vijay", 22))
