@@ -1,6 +1,6 @@
 id,name,age,department
-1,Alice,28,Engineering
-2,Bob,34,Marketing
+1,Alice,28,Engineering,hi,delulu
+2,Bob,34,Marketing,hello
 3,Charlie,25,Sales
 4,David,45,HR
 5,Eva,29,Finance
